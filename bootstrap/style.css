@@ -67,3 +67,7 @@ a.exs:active {
   color: blue;
 
 }
+.item{
+
+  align-items: center;
+}
