@@ -11,44 +11,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://github.com/ThiagoPDC">
-        <img src="images/logo.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                jsexamples
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="jsexample/example1/example1.html">Receipt Calculator</a></li>
-                <li><a class="dropdown-item" href="jsexample/example2/example2.html">Retirement Calculator</a></li>
-                <li><a class="dropdown-item" href="jsexample/example3/example3.html">Grades calculator</a></li>
-                <li><a class="dropdown-item" href="jsexample/example4/example4.html">Interest calculator</a></li>
-              </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=#about-mygames>what is my games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=#download>download</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+<?php include("menu.php"); ?>
 
 
   
@@ -91,7 +54,7 @@
 </div>
 <div class="container mt-5" >
   <div class="row">
-    <div class="col-sm-4" id="about-mygames">
+    <div class="col-sm-4" id="about-colorimeter">
       <div class="item">
       <h3>Colorimeter</h3>
       <p>Colorimeter is a an instrument that compares the amount of light getting through a solution with the amount that can get through a sample of pure solvent. In the following project I will be atempting to build one from arduino board and compensated wood. on the video below an colorimeter will be explained in more details
@@ -100,7 +63,7 @@
     </div>
     </div>
     <br><br><br><br><br><br><br><br>
-    <div class="col-sm-4" id="download">
+    <div class="col-sm-4" id="planning">
       <h3>The start planing</h3>
       
       <p></p>
