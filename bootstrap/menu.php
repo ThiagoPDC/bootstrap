@@ -14,6 +14,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/bootstrap/images/js-imaage.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill">
                 jsexamples
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -25,6 +26,7 @@
           </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/bootstrap/images/php-image.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
                 phpexamples
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
