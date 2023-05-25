@@ -28,7 +28,7 @@
                 phpexamples
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/bootstrap/phpexamples/receiptCalc/example1php.php">Receipt Calculator</a></li>
+                <li><a class="dropdown-item" href="/bootstrap/phpexamples/receiptCalc/example1php.php">Recipe Calculator</a></li>
 
               </ul>
           </li>
