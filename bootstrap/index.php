@@ -54,19 +54,19 @@
 </div>
 <div class="container mt-5" >
   <div class="row">
-    <div class="col-sm-4" id="about-colorimeter">
+    <div class="col-sm-4 card bg-dark m-2" id="about-colorimeter">
       <div class="item">
-      <h3>Colorimeter</h3>
-      <p>Colorimeter is a an instrument that compares the amount of light getting through a solution with the amount that can get through a sample of pure solvent. In the following project I will be atempting to build one from arduino board and compensated wood. on the video below an colorimeter will be explained in more details
+      <div class="card-header"><h3>Colorimeter</h3></div>
+      <div class="card-body"><p>Colorimeter is a an instrument that compares the amount of light getting through a solution with the amount that can get through a sample of pure solvent. In the following project I will be atempting to build one from arduino board and compensated wood. on the video below an colorimeter will be explained in more details</div>
       </p>  
       <iframe width=auto src="https://www.youtube.com/embed/voHkIO73vew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay 1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     </div>
     <br><br><br><br><br><br><br><br>
-    <div class="col-sm-4" id="planning">
-      <h3>The start planing</h3>
+    <div class="col-sm-4 card bg-dark m-2" id="planning">
+     <div class="card-header"> <h3>The start planing</h3></div>
       
-      <p></p>
+     <div class="card-body"><p></p>
     </div>
   </div>
 </div>

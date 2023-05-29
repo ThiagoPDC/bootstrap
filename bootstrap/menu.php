@@ -30,7 +30,9 @@
                 phpexamples
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/bootstrap/phpexamples/receiptCalc/example1php.php">Recipe Calculator</a></li>
+                <li><a class="dropdown-item" href="/bootstrap/phpexamples/receiptCalc/example1php.php">Lace times table</a></li>
+                <li><a class="dropdown-item" href="/bootstrap/phpexamples/phpstudy/phpstudy.php">PHP study</a></li>
+                
 
               </ul>
           </li>

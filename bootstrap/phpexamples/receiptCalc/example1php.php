@@ -13,35 +13,37 @@
 
 <?php include("../../menu.php");?>
 
-    <div class="row">
-          <div class="con">
-            <div class="container mt-5">
-              <div id="receiptScreen">
-                <h1>Corn meal cake</h1>
-                  <div class="justify" id="CornMealRS">
-                      <ul id="cornMealCake">
-                      <li>3 eggs</li>
-                      <li>2 Teacup(s) of sugar</li>
-                      <li>3 Teacup(s) of corn meal</li>
-                      <li>3 Table spoons of wheat</li>
-                      <li>1/2 Cup(s) kitchen oil</li>
-                      <li>1 Cup(s) of milk</li>
-                      <li>1 Table spoon(s) of yeast</li>
-                    </ul>
-                  </div>
-          <div id="receiptForm">
-            <form>    
-              <label for="num">Receipt amount<br> </label>
-              <input type="number" id="num" name="num" required>
-              <button type="button" onclick='doubleIngredients()'>Calculate</button>
-            </form>
-          </div>
+<div class='container mt-5'>
+        <div class="row">
+         
+          <h1>Tabuadas do 1 ao 100</h1>
+          <p>Neste exemplo, laços encadeados são usados para construir as tabuadas do 1 ao 100.</p>
+          
+
+          <?php for ($i = 1; $i <= 100 ; $i++ ){
+              echo"<div class='card bg-dark col-sm-3 m-2'>";
+              
+              
+              
+            
+              echo "<div class='card-header'>Tábuada do " . $i . ".</div><br>";
+              echo "<div class='card-body'>";
+              for ($ii = 1; $ii <= 10; $ii++ ){
+                $iii = $ii * $i;
+                echo"$i x $ii = $iii <br>";
+               
+              } 
+              echo "</div>";
+              echo "</div>";
+            
+              
+            }
+          ?>
+          
+      
         </div>
-      </div>
-    </div>
-  </div>
-
-
+</div>
+     
 
 
 
