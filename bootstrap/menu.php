@@ -36,6 +36,18 @@
 
               </ul>
           </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/bootstrap/images/php-image.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                Matérias EM
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/bootstrap/materias/historia.php">História</a></li>
+                <li><a class="dropdown-item" href="/bootstrap/materias/matematica.php">Matemática</a></li>
+                
+
+              </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href=/bootstrap/index.php#about-colorimeter>what is a colorimeter?</a>
           </li>

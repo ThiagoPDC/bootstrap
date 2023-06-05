@@ -19,6 +19,10 @@ body, html {
 
 
 }
+.just{
+  align-items:start;
+  text-align: justify;
+}
 p{
     text-align: justify; 
   }
@@ -81,4 +85,14 @@ a.exs:active {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(25, 0, 255, 0.842);
   transform: scale(105%);
+}
+.upscale:hover{
+  transform: scale(300%);
+  transition: 0.3s;
+  
+
+}
+.highlight:hover{
+
+   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.548);
 }

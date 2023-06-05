@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<?php include("../../menu.php")  ?>
+<?php include("../menu.php")  ?>
 <div class="container mt-5 just" >
   <div class="row just">
   <div class="col-sm-3 card bg-dark m-2" id="constituicao1934">
