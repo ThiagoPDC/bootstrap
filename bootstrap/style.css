@@ -96,3 +96,14 @@ a.exs:active {
 
    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.548);
 }
+.n1 {
+  height: 10%;
+}
+.n2 {
+  height: 80%;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
