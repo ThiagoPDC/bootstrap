@@ -47,7 +47,7 @@ h3{
     text-align: center;
   }
 body{
-    background-image: url("images/bg-image.jpg")!important;   
+    background-image: url("indexImage/bg-image.jpg")!important;   
     max-width: 100%;
     height: auto;
     background-position: center top;
