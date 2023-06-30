@@ -18,7 +18,7 @@
     <div class="con">
       <div class="container mt-5">
         <div id="titulo">
-          <h1>Did I graduate??</h1>
+          <h1>Interest Calculator</h1>
       </div>
   
       <div id="formfees">

@@ -13,18 +13,18 @@
 <?php include("/xampp/htdocs/xampp/bootstrap/bootstrap/MENU/menu.php")  ?>
 
 
-<div class="container-fluid p-5 bg-primary text-white text-center">
+<div class="container-fluid p-1 bg-dark text-white text-center">
   <h1>Banco de Dados - Lista Responsiva</h1>
   <p>Listas de dados que cabem na tela do celular</p> 
 </div>
   
-<div class="container-fluid mt-3">
+<div class="container-fluid bg-dark mt-3">
   <h1>Minha Lista</h1>
   <p>Abaixo uma lista com a classe .table-responsive que apresenta um scrool horizontal em telas reduzidas:</p>
     
 
   <div class="card bg-dark m-2" id="constituicao1937">
-       
+  
       <div class="card-body">
 
     
@@ -89,9 +89,12 @@
             die();
           }
         ?>
-
+      
       </tbody>
     </table>
+    <form action="/bootstrap/PHP/php_bancoDados/php_databaseSignUp.php">
+      <input class="btn btn-primary" type="submit" value="SignUp page" />
+    </form>
   </div>
 
 
@@ -99,6 +102,7 @@
 
   </div>
   </div>
+  <br>
     </div>
 
 

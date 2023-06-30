@@ -28,17 +28,17 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <video class="ratio ratio-16x9" muted="" autoplay="" loop=""
-              src="images/carousel-1.mp4" width="950"></video>
+              src="/bootstrap/indexImage/carousel-1.mp4" width="950"></video>
           </div>
             
         
         <div class="carousel-item">
           <video class="ratio ratio-16x9" muted="" autoplay="" loop=""
-            src="images/carousel-2.mp4" width="950"></video>
+            src="/bootstrap/indexImage/carousel-2.mp4" width="950"></video>
         </div>
         <div class="carousel-item">
           <video class="ratio ratio-16x9" muted="" autoplay="" loop=""
-            src="images/carousel-3.mp4" width="950"></video>
+            src="/bootstrap/indexImage/carousel-3.mp4" width="950"></video>
           </div>
         </div>
         <!-- Left and right controls/icons -->
