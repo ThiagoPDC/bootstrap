@@ -20,7 +20,7 @@
                 include("../bancodadosconexao.php");
                 try {
                     $id = $_GET['id'];
-                    $stmt = $dbh->prepare("DELETE FROM minha_tabela WHERE id = ?");
+                    $stmt = $dbh->prepare("DELETE FROM jogos WHERE id = ?");
                     $stmt->bindParam( 1, $id );
                     if($stmt->execute()) {
                       ?>

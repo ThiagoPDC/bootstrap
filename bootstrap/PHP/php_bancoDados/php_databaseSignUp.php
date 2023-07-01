@@ -29,49 +29,21 @@
         <form name="myForm" action="php_dataBaseActionPage.php" onsubmit="return validateForm()" method="post">
             <div class="row">
                 <div class="col-md-6 mt-1">
-                    <label for="col-01">Coluna 01:</label>
-                    <input type="text" class="form-control" id="col-01" placeholder="Valor para coluna 01" name="col-01">
+                    <label for="col-01">Nome do Jogo:</label>
+                    <input type="text" class="form-control" id="col-01" placeholder="Jogo" name="col-01">
                 </div>
                 <div class="col-md-6 mt-1">
-                    <label for="col-02">Coluna 02:</label>
-                    <input type="text" class="form-control" id="col-02" placeholder="Valor para coluna 02" name="col-02">
+                    <label for="col-02">Empresa:</label>
+                    <input type="text" class="form-control" id="col-02" placeholder="Empresa" name="col-02">
                 </div>
                 <div class="col-md-6 mt-1">
-                    <label for="col-03">Coluna 03:</label>
-                    <input type="text" class="form-control" id="col-03" placeholder="Valor para coluna 03" name="col-03">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-04">Coluna 04:</label>
-                    <input type="text" class="form-control" id="col-04" placeholder="Valor para coluna 04" name="col-04">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-05">Coluna 05:</label>
-                    <input type="text" class="form-control" id="col-05" placeholder="Valor para coluna 05" name="col-05">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-06 mt-1">Coluna 06:</label>
-                    <input type="text" class="form-control" id="col-06" placeholder="Valor para coluna 06" name="col-06">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-07">Coluna 07:</label>
-                    <input type="text" class="form-control" id="col-07" placeholder="Valor para coluna 07" name="col-07">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-08">Coluna 08:</label>
-                    <input type="text" class="form-control" id="col-08" placeholder="Valor para coluna 08" name="col-08">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-09">Coluna 09:</label>
-                    <input type="text" class="form-control" id="col-09" placeholder="Valor para coluna 09" name="col-09">
-                </div>
-                <div class="col-md-6 mt-1">
-                    <label for="col-10">Coluna 10:</label>
-                    <input type="text" class="form-control" id="col-10" placeholder="Valor para coluna 10" name="col-10">
+                    <label for="col-03">Gênero:</label>
+                    <input type="text" class="form-control" id="col-03" placeholder="Gênero" name="col-03">
                 </div>
             </div>
             <div class="row">
                 <div class="col m-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
                 </div>
             </div>
         </form>

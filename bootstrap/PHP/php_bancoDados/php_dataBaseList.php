@@ -33,53 +33,25 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Coluna 01</th>
-          <th>Coluna 02</th>
-          <th>Coluna 03</th>
-          <th>Coluna 04</th>
-          <th>Coluna 05</th>
-          <th>Coluna 06</th>
-          <th>Coluna 07</th>
-          <th>Coluna 08</th>
-          <th>Coluna 09</th>
-          <th>Coluna 10</th>
+          <th>Título do Jogo</th>
+          <th>Empresa</th>
+          <th>Genero</th>
+          <th></th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Aqui vai o ID</td>
-          <td>Aqui vai o valor da coluna 01</td>
-          <td>Aqui vai o valor da coluna 02</td>
-          <td>Aqui vai o valor da coluna 03</td>
-          <td>Aqui vai o valor da coluna 04</td>
-          <td>Aqui vai o valor da coluna 05</td>
-          <td>Aqui vai o valor da coluna 06</td>
-          <td>Aqui vai o valor da coluna 07</td>
-          <td>Aqui vai o valor da coluna 08</td>
-          <td>Aqui vai o valor da coluna 09</td>
-          <td>Aqui vai o valor da coluna 10</td>
-        </tr>
 
         <?php
           include("bancodadosconexao.php");
           try {
-            $sth = $dbh->prepare('SELECT * from minha_tabela');
+            $sth = $dbh->prepare('SELECT nome, empresa, genero from jogos');
             $sth->execute();
             $result = $sth->fetchAll(PDO::FETCH_ASSOC);
             if(!empty($result)) {
               foreach($result as $row) {
                 echo "<tr>";
-                echo "<td>". $row["id"] ."</td>";
-                echo "<td>". $row["campo_01"] ."</td>";
-                echo "<td>". $row["campo_02"] ."</td>";
-                echo "<td>". $row["campo_03"] ."</td>";
-                echo "<td>". $row["campo_04"] ."</td>";
-                echo "<td>". $row["campo_05"] ."</td>";
-                echo "<td>". $row["campo_06"] ."</td>";
-                echo "<td>". $row["campo_07"] ."</td>";
-                echo "<td>". $row["campo_08"] ."</td>";
-                echo "<td>". $row["campo_09"] ."</td>";
-                echo "<td>". $row["campo_10"] ."</td>";
+                echo "<td>". $row["nome"] ."</td>";
+                echo "<td>". $row["empresa"] ."</td>";
+                echo "<td>". $row["genero"] ."</td>";
                 echo "</tr>";
               }
             } 

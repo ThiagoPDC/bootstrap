@@ -36,10 +36,10 @@
 ?>
 
 <?php
-    include("../banco_dados_conexao.php");
+    include("../bancodadosconexao.php");
     try {
       
-      $sth = $dbh->prepare("SELECT * FROM minha_tabela WHERE id = ?");
+      $sth = $dbh->prepare("SELECT * FROM jogos WHERE id = ?");
       $sth->bindParam( 1, $id );
       $sth->execute();
       $result = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -49,58 +49,30 @@
   }
 ?>
 
-  <form name="myForm" action="editar_action_page.php" onsubmit="return validateForm()" method="post">
+  <form name="myForm" action="php_EditingActionPage.php" onsubmit="return validateForm()" method="post">
     <div class="row">
       <div class="col-md-6 mt-1">
-        <label for="col-01">Coluna 01:</label>
-        <input type="text" class="form-control" id="col-01" placeholder="Valor para coluna 01" name="col-01" value="<?php echo $result[0]["campo_01"];?>">
+        <label for="col-01">Título do Jogo:</label>
+        <input type="text" class="form-control" id="col-1" placeholder="Jogo" name="col-01" value="<?php echo $result[0]['nome'];?>">
       </div>
       <div class="col-md-6 mt-1">
-        <label for="col-02">Coluna 02:</label>
-        <input type="text" class="form-control" id="col-02" placeholder="Valor para coluna 02" name="col-02" value="<?php echo $result[0]["campo_02"];?>">
+        <label for="col-02">Empresa:</label>
+        <input type="text" class="form-control" id="col-2" placeholder="Empresa" name="col-02" value="<?php echo $result[0]['empresa'];?>">
       </div>
       <div class="col-md-6 mt-1">
-        <label for="col-03">Coluna 03:</label>
-        <input type="text" class="form-control" id="col-03" placeholder="Valor para coluna 03" name="col-03" value="<?php echo $result[0]["campo_03"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-04">Coluna 04:</label>
-        <input type="text" class="form-control" id="col-04" placeholder="Valor para coluna 04" name="col-04" value="<?php echo $result[0]["campo_04"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-05">Coluna 05:</label>
-        <input type="text" class="form-control" id="col-05" placeholder="Valor para coluna 05" name="col-05" value="<?php echo $result[0]["campo_05"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-06 mt-1">Coluna 06:</label>
-        <input type="text" class="form-control" id="col-06" placeholder="Valor para coluna 06" name="col-06" value="<?php echo $result[0]["campo_06"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-07">Coluna 07:</label>
-        <input type="text" class="form-control" id="col-07" placeholder="Valor para coluna 07" name="col-07" value="<?php echo $result[0]["campo_07"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-08">Coluna 08:</label>
-        <input type="text" class="form-control" id="col-08" placeholder="Valor para coluna 08" name="col-08" value="<?php echo $result[0]["campo_08"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-09">Coluna 09:</label>
-        <input type="text" class="form-control" id="col-09" placeholder="Valor para coluna 09" name="col-09" value="<?php echo $result[0]["campo_09"];?>">
-      </div>
-      <div class="col-md-6 mt-1">
-        <label for="col-10">Coluna 10:</label>
-        <input type="text" class="form-control" id="col-10" placeholder="Valor para coluna 10" name="col-10" value="<?php echo $result[0]["campo_10"];?>">
+        <label for="col-03">Gênero:</label>
+        <input type="text" class="form-control" id="col-3" placeholder="Genero" name="col-03" value="<?php echo $result[0]['genero'];?>">
       </div>
     </div>
     <div class="row">
       <div class="col m-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Salvar</button>
       </div>
     </div>
     <input type="hidden" name="id" value="<?php echo $result[0]["id"];?>">
   </form>
 
-  <a href="detalhe.php?id=<?php echo $id;?>">Voltar</a>
+  <a href="php_dataBaseDetailing.php?id=<?php echo $id;?>">Voltar</a>
 
 </div>
 

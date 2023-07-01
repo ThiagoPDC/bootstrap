@@ -20,32 +20,23 @@
     <div class="container-fluid bg-dark mt-3">
         <h1>Detalhes do item</h1>
         <p>Abaixo os detalhes de um item da lista.</p> 
-    <?php
-        $id = $_GET['id'];
-    ?>
-
-    
+   
+        <?php 
+  $id = $_GET['id'];
+?>
 
 
     <?php
         include("../bancodadosconexao.php");
         try {
-            $sth = $dbh->prepare("SELECT * FROM minha_tabela WHERE id = ?");
+            $sth = $dbh->prepare("SELECT * FROM jogos WHERE id = ?");
             $sth->bindParam( 1, $id );
             $sth->execute();
             $result = $sth->fetchAll(PDO::FETCH_ASSOC);
             if(!empty($result)) {
-                echo "<br><b>id</b>: ". $result[0]['id'];
-                echo "<br><b>Campo 01</b>: ". $result[0]['campo_01'];
-                echo "<br><b>Campo 02</b>: ". $result[0]['campo_02'];
-                echo "<br><b>Campo 03</b>: ". $result[0]['campo_03'];
-                echo "<br><b>Campo 04</b>: ". $result[0]['campo_04'];
-                echo "<br><b>Campo 05</b>: ". $result[0]['campo_05'];
-                echo "<br><b>Campo 06</b>: ". $result[0]['campo_06'];
-                echo "<br><b>Campo 07</b>: ". $result[0]['campo_07'];
-                echo "<br><b>Campo 08</b>: ". $result[0]['campo_08'];
-                echo "<br><b>Campo 09</b>: ". $result[0]['campo_09'];
-                echo "<br><b>Campo 10</b>: ". $result[0]['campo_10'];
+                echo "<br><b>Título do Jogo</b>: ". $result[0]['nome'];
+                echo "<br><b>Empresa</b>: ". $result[0]['empresa'];
+                echo "<br><b>Gênero</b>: ". $result[0]['genero'];
             } 
             $dbh = null;
         } catch (PDOException $e) {
@@ -53,11 +44,16 @@
             die();
         }
   ?>
+ 
 
 <br><br>
 
 <a href="php_dataBaseDeleting.php?id=<?php echo $id; ?>" class="btn btn-danger">
  Excluir
+</a>
+
+<a href="php_dataBaseEditingPage.php?id=<?php echo $id; ?>" class="btn btn-success">
+ Editar
 </a>
 
 <br><br>
